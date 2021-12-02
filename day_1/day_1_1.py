@@ -1,2 +1,2 @@
-from itertools import pairwise
-print(len([int(y)-int(x)for(x,y)in pairwise(open("a").read().splitlines())if int(y)-int(x)>0]))
+t=[int(x)for x in open("a").read().splitlines()]
+print(len([0for i,j in zip(t[:-1],t[1:]) if j-i>0]))
