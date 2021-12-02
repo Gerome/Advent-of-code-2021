@@ -1,10 +1,7 @@
-with open("a") as a_file:
-    file_contents = a_file.read()
-    depths = file_contents.splitlines()
 a = []
 i = 0
 prev = 0
-for depth in depths:
+for depth in open("a").read().splitlines():
     a.append(int(depth))
     if len(a)>3:
         del a[0]
