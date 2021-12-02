@@ -114,3 +114,4 @@ dmypy.json
 .pyre/
 .idea/*
 *.txt
+day_2/a

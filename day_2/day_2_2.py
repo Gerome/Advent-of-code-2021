@@ -1,17 +1,10 @@
-total_horizontal = 0
-total_depth = 0
-aim = 0
-
-for instr in open("data.txt").read().splitlines():
-    instr, amount = instr.split()
-    amount = int(amount)
-    match instr:
-        case "forward":
-            total_horizontal += amount
-            total_depth += aim * amount
-        case "down":
-            aim += amount
-        case "up":
-            aim -= amount
-
-print(total_depth * total_horizontal)
+a=b=c=0
+for d,e in[x.split()for x in open("a").read().splitlines()]:
+    e=int(e)
+    match d:
+        case"forward":
+            a+=e
+            b+=c*e
+        case"down":c+=e
+        case"up":c-=e
+print(b*a)
