@@ -1,5 +1,5 @@
 a=b=c=0
-for d,e in[x.split()for x in open("a").read().splitlines()]:
+for d,e in[x.split()for x in open("a").read().split("\n")]:
     e=int(e)
     match d[0]:
         case"f":

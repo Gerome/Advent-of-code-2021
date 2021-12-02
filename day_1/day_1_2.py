@@ -1,5 +1,5 @@
 a=[];i=b=0
-for d in open("a").read().splitlines():
+for d in open("a").read().split("\n"):
     a.append(int(d))
     if len(a)>3:
         del a[0]
