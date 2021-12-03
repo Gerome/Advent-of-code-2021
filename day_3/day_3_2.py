@@ -2,8 +2,7 @@
 def x(m):
     d=open("a").read().split("\n")
     for i in range(12):
-        n=list(zip(*d))
-        d[:]=[val for val in d if val[i]==(m)[sum([int(value) for value in n[i]])>=len(d)/2]]
+        d[:]=[v for v in d if v[i]==(m)[sum([int(x) for x in list(zip(*d))[i]])>=len(d)/2]]
         if len(d)==1:
             return int(d[0],2)
 print(x("01")*x("10"))
